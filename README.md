@@ -1,8 +1,8 @@
-#Introduction to Django
+# Introduction to Django
 
-##Installing Django
+## Installing Django
 
-###Mac/Unix
+### Mac/Unix
 1. Download [Django-1.4.2.tar.gz](https://www.djangoproject.com/download/1.4.2/tarball/)
 2. Run the following commands in terminal:
 
@@ -12,7 +12,7 @@ cd Django-1.4.2
 sudo python setup.py install
 ```
 
-###PC
+### PC
 1. Download and install Python 2.7 if you dont have it. (http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi)
 2. Download Django (https://github.com/django/django/zipball/master)
 3. Copy django folder into C:\Python27\Lib\site-packages\
@@ -25,7 +25,7 @@ sudo python setup.py install
 ```
 
 
-#####Test to find out if it was a great success!
+##### Test to find out if it was a great success!
 In cmd (you can find this program from the start menu), type
 
 ```
@@ -54,9 +54,9 @@ YAY
 
 Note: exit() will get you out of the shell
 
-##Once you have Django installed
+## Once you have Django installed
 
-###Creating your first project
+### Creating your first project
 
 in terminal enter:
 
@@ -86,7 +86,7 @@ To change the port, you can pass it when you call the run run server command:
 
 So that is pretty sweet, you just ran your first Django server! :)
 
-###Setting up the database
+### Setting up the database
 
 Open up mysite/settings.py. Find the DATABASE object, and we will use sqlite3 in this example.
 
@@ -112,7 +112,7 @@ Now that we have the database setting complete, lets sync the database:
 
     python manage.py syncdb
 
-###Creating the Models
+### Creating the Models
 
 Now, lets create an app. A project can have many apps.
 
@@ -195,7 +195,7 @@ Lets hop back into the django shell, and type:
 
     [<Member: Dawe>]
 
-###Admin Features
+### Admin Features
 
 So now we have done too much backend stuff. Let us look at the admin features. There are three steps needed:
 
@@ -232,7 +232,7 @@ This tells Django to add your models to the admin interface.
 
 To customize the template look and feel, go [here](https://docs.djangoproject.com/en/1.4/intro/tutorial02/#customize-the-admin-look-and-feel)
 
-###Designing the URL's
+### Designing the URL's
 
 In mysite/urls.py add the following: 
 
@@ -286,7 +286,7 @@ Then inside that html file we can access our model objects and can embed python 
 </html>
 ```
 
-###Get your app on Heroku!
+### Get your app on Heroku!
 
 Download and install Heroku, then launch your app from terminal:
 
